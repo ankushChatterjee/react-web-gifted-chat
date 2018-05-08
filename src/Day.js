@@ -13,7 +13,7 @@ import { isSameDay, isSameUser, warnDeprecated } from './utils';
 export default class Day extends React.Component {
   render() {
     const locale = window.navigator.userLanguage || window.navigator.language;
-    if (!isSameDay(this.props.currentMessage, this.props.previousMessage)) {
+    if (!isSameDay(this.props.currentMessage, this.props.nextMessage)) {
       return (
         <View style={[styles.container, this.props.containerStyle]}>
           <View style={[styles.wrapper, this.props.wrapperStyle]}>
